@@ -9,6 +9,7 @@ import {
     Link
   } from "react-router-dom";
 import Login from './Login';
+import FirebaseLog from '../components/FirebaseLog';
 function Navbar() {
     return (
             <Router>
@@ -37,7 +38,7 @@ function Navbar() {
             <Register />
           </Route>
           <Route path="/login">
-            <Login />
+            F=<FirebaseLog />
           </Route>
           <Route path="/product">
             <Product />

@@ -27,3 +27,8 @@ code {
 .product-img{
   width: 100%;
 }
+
+.log-input{
+  width: 80% !important;
+  margin: 30px 30px !important;
+}
