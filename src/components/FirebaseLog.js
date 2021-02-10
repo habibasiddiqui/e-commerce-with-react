@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import fire from '../config/Fire';
-import Login from '../pages/Login';
+import Login from '../pages/Signin';
+import Signin from '../pages/Signin';
 import Welcome from '../pages/Welcome';
 
 function FirebaseLog() {
@@ -59,6 +60,7 @@ function FirebaseLog() {
 
     const handleSignOut = () => {
         fire.auth().signOut();
+        // window.location('/')
     }
 
     const authListner = () => {
@@ -93,6 +95,16 @@ function FirebaseLog() {
                             errorPwd={errorPwd}
                             handleSignIn={handleSignIn}
                             handleSignUp={handleSignUp} />
+                        {/* <Signin email={email}
+                            password={password}
+                            setEmail={setEmail}
+                            setPassword={setPassword}
+                            hasAccount={hasAccount}
+                            setHasAccount={setHasAccount}
+                            errorEmail={errorEmail}
+                            errorPwd={errorPwd}
+                            handleSignIn={handleSignIn}
+                            handleSignUp={handleSignUp} /> */}
 
                     </div>
                 )

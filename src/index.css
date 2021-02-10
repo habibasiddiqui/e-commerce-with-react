@@ -12,20 +12,52 @@ code {
     monospace;
 }
 
+/* bootstrap colors: 
+--primary: #007bff;
+--secondary: #6c757d;
+--success: #28a745;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #dc3545;
+--light: #f8f9fa;
+--dark: #343a40; */
+
 .nav {
   border-bottom: 2px solid black;
 }
 
-.mainMenu{
-  list-style: none;
-  display: inline-block;
-  padding: 10px 20px;
-  /* padding-bottom: 15px; */
+.main-menu{
+  background-color: #007bff !important;
+}
 
+.main-menu-item{ 
+  color: #fff !important;
+  font-size: 18px;
+
+}
+
+.main-menu-brand {
+  font-size: 24px !important;
+  font-style: italic;
 }
 
 .product-img{
   width: 100%;
+}
+
+
+.MuiFormLabel-root.Mui-focused, .auth-link{
+  color: #007bff !important;
+
+}
+
+.auth-link:hover, .auth-link:focus{
+  color: #004187 !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #007bff !important;
+
 }
 
 .log-input{
