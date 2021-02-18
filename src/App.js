@@ -6,6 +6,7 @@ import Product from './pages/Product';
 import FirebaseLog from './components/FirebaseLog';
 import Signup from './pages/Signup';
 import Welcome from "./pages/Welcome";
+import './App.css';
 
 function App() {
   return (
