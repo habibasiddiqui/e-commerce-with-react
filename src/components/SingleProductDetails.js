@@ -13,6 +13,9 @@ import { Divider, Grid } from '@material-ui/core';
 
 const useStyles = makeStyles({
 
+  root: {
+    
+  },
   media: {
     height: '250px',
     maxWidth: '200px',
@@ -34,15 +37,12 @@ export default function SingleProductDetails({details}) {
   const classes = useStyles();
   
   const {id, title, price, description, category, image } = details;
-  console.log(details)
-// console.log(props);
+  // console.log(details)
 
 
   return (
-    //   <div>
-
-    //   </div>
-    // <Card  >
+ 
+    <Card className={classes.root} >
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -58,13 +58,13 @@ export default function SingleProductDetails({details}) {
 
         <table>
             <tr>
-                <td>
+                <td className='td-col'>
                 <Typography variant="body1"  component="p">
                     Product ID
                 </Typography>
                 </td>
 
-                <td>
+                <td className='td-col-data' >
                 <Typography variant="body1" color="textSecondary" component="p">
                     {id}
                 </Typography>
@@ -72,12 +72,12 @@ export default function SingleProductDetails({details}) {
             </tr>
 
             <tr>
-                <td>
+                <td className='td-col'>
                 <Typography variant="body1"  component="p">
                     Price
                 </Typography>
                 </td>
-                <td>
+                <td className='td-col-data'>
                 <Typography variant="body1" color="textSecondary" component="p">
                     {price}
                 </Typography>
@@ -85,12 +85,12 @@ export default function SingleProductDetails({details}) {
             </tr>
 
             <tr>
-                <td >
+                <td className='td-col' >
                 <Typography variant="body1"  component="p">
                     Category
                 </Typography>
                 </td>
-                <td>
+                <td className='td-col-data' >
                 <Typography  variant="body1" color="textSecondary" component="p">
                     {category}
                 </Typography>
@@ -98,12 +98,12 @@ export default function SingleProductDetails({details}) {
             </tr>
 
             <tr>
-                <td>
+                <td className='td-col'>
                 <Typography variant="body1"  component="p">
                     Description
                 </Typography>
                 </td>
-                <td>
+                <td className='td-col-data'>
                 <Typography variant="body1" color="textSecondary" component="p">
                     {description}
                 </Typography>
@@ -114,6 +114,6 @@ export default function SingleProductDetails({details}) {
         </CardContent>
       </CardActionArea>
       
-    // </Card>
+     </Card>
   );
 }

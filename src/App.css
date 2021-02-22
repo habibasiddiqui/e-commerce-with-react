@@ -15,7 +15,13 @@
   justify-content: space-between;
 }
 
-td {
+.td-col, .td-col-data {
   vertical-align: top;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
+.td-col-data {
+  padding-left: 10px
+}
+

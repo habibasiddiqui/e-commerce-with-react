@@ -45,7 +45,6 @@ const useStyles = makeStyles({
 export default function ProductCard({product}) {
   const classes = useStyles();
   
-  // console.log(product)
   const {id, title, price, description, category, image } = product;
 
   // for Details Dialog
@@ -67,6 +66,7 @@ export default function ProductCard({product}) {
           alt={title}
           image={image}
           title={title}
+          onClick={handleClickOpen}
         />
         <CardContent className={classes.titleDiv}>
           <Typography className={classes.title} title={title} gutterBottom variant="h6" component="h2">

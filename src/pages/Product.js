@@ -1,8 +1,6 @@
 import { Grid } from '@material-ui/core';
 import React, { useState, useEffect } from 'react'
 import ProductCard from '../components/ProductCard';
-import ProductGrid from '../components/ProductGrid';
-import ShowProduct from '../components/ShowProduct';
 
 function Product() {
     const [products, setProducts] = useState([]);
@@ -10,7 +8,7 @@ function Product() {
         fetch('https://fakestoreapi.com/products')
         .then(res=>res.json())
         .then(product => {
-                console.log(product);
+                // console.log(product);
                 setProducts(product);
             });
     }, [])
@@ -18,7 +16,7 @@ function Product() {
 // console.log(products)
     return (
         <div >
-            <Grid className='products-div' container spacing={0} justify='center' alignContent='space-around' alignItems='center'>
+            <Grid className='products-div' container spacing={2} justify='center' alignContent='space-around' alignItems='center'>
                 {products.map( (product) => (
                 
                 <Grid style={{}} key={product.id} item xs={12} sm={6} md={4} lg={3}>
@@ -29,7 +27,6 @@ function Product() {
             
             </Grid>
 
-            {/* <ProductGrid products={products}/> */}
             
         </div>
     )

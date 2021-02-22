@@ -69,7 +69,7 @@ export default function SingleProductDialog(props) {
         fetch(`https://fakestoreapi.com/products/${id}`)
             .then(res=>res.json())
             .then(json=>{
-                console.log(json)
+                // console.log(json)
                 setDetails(json)
             })
     }, [])
