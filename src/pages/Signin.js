@@ -264,7 +264,7 @@ export default function Signin(props) {
             </Button>
             <Grid container>
               <Grid item>
-                <Link href="#" variant="body2" className="auth-link">
+                <Link href="/signup" variant="body2" className="auth-link">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

@@ -10,9 +10,9 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           
-          <Nav className="mr-auto">
-            <Nav.Link className='main-menu-item' as={Link} to='/'>Home</Nav.Link>
-            <Nav.Link className='main-menu-item' as={Link} to='/products' >Products</Nav.Link>
+          {/* <Nav className="mr-auto"> */}
+            {/* <Nav.Link className='main-menu-item' as={Link} to='/'>Home</Nav.Link>
+            <Nav.Link className='main-menu-item' as={Link} to='/products' >Products</Nav.Link> */}
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -20,7 +20,7 @@ function Header() {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
             </NavDropdown> */}
-          </Nav>
+          {/* </Nav> */}
 
           <Nav className="ml-auto">
             <Nav.Link className='main-menu-item' as={Link} to='/signin' >Sign in</Nav.Link>

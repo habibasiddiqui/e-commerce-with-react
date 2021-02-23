@@ -23,9 +23,9 @@ function App() {
             <Signup />
           </Route>
 
-          <Route path="/products">
+          {/* <Route path="/products">
             <Product />
-          </Route>
+          </Route> */}
 
           <Route path='/welcome'>
             <Welcome />

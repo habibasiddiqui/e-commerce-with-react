@@ -23,22 +23,22 @@ function FirebaseLog() {
         setErrorPwd("");
       }
 
-    const handleSignUp = () => {
-        clearErrors();
-        fire.auth().createUserWithEmailAndPassword(email, password)
-            .catch(error => {
-                switch (error.code) {
-                    case "auth/email-already-in-use":
-                    case "auth/invalid-email":
-                        setErrorEmail(error.message);
-                        break;
-                    case "auth/weak-password":
-                        setErrorPwd(error.message);
-                        break;
-                }
-            }
-            )
-    }
+    //  const handleSignUp = () => {
+    //     clearErrors();
+    //     fire.auth().createUserWithEmailAndPassword(email, password)
+    //         .catch(error => {
+    //             switch (error.code) {
+    //                 case "auth/email-already-in-use":
+    //                 case "auth/invalid-email":
+    //                     setErrorEmail(error.message);
+    //                     break;
+    //                 case "auth/weak-password":
+    //                     setErrorPwd(error.message);
+    //                     break;
+    //             }
+    //         }
+    //         )
+    // }
 
     const handleSignIn = () => {
         clearErrors();
@@ -94,7 +94,8 @@ function FirebaseLog() {
                             errorEmail={errorEmail}
                             errorPwd={errorPwd}
                             handleSignIn={handleSignIn}
-                            handleSignUp={handleSignUp} />
+                            // handleSignUp={handleSignUp} 
+                            />
                         {/* <Signin email={email}
                             password={password}
                             setEmail={setEmail}
